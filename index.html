@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discgolf Master</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      transition: background 0.5s ease;
+    }
+    header {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 4.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+      animation: popIn 1s ease forwards;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 12px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00aced;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 30px 0;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+    footer {
+      background: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.5rem; }
+      header p { font-size: 1rem; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discgolf Master</h1>
+    <p>Bli vassare. Kasta längre. Träffa bättre.</p>
+  </header>
+
+  <nav>
+    <a href="#sikta">Sikta</a>
+    <a href="#kast">Kast</a>
+    <a href="#tutorials">Tutorials</a>
+    <a href="#discar">Diskar</a>
+    <a href="#tips">Tips</a>
+    <a href="#banor">Banor</a>
+    <a href="#proffs">Proffsen</a>
+  </nav>
+
+  <section id="sikta">
+    <h2>Så siktar du rätt</h2>
+    <div class="card">
+      <p>Håll ögonen på målet, rikta axlarna och arbeta med en stabil follow-through. Tänk på vind och lutning. Det är viktigt att ha kontroll över kroppens balans under kastet. Många nybörjare glömmer att använda benen i sin riktning. Sikta inte bara med ögonen – låt hela kroppen följa med. Träna på att känna in hur disken reagerar vid olika lutning. Justera vinkeln beroende på banan du spelar på. Kom ihåg att siktning också handlar om självförtroende.</p>
+    </div>
+  </section>
+
+  <section id="kast">
+    <h2>Teknik för att kasta långt och rakt</h2>
+    <div class="card">
+      <p>Använd höften, trampa in kraft och låt armen piska ut disken. Träna på backhand och forehand för variation. Se till att greppet är starkt men inte spänt. Ett avslappnat kast ger mer kontroll och distans. Undvik att bara använda armen – hela kroppen ska generera kraft. Hitta din rytm genom att repetera samma rörelse flera gånger. Tänk på fotarbetet, speciellt vid drivekast. Se till att följa igenom med armen för bästa resultat.</p>
+    </div>
+  </section>
+
+  <section id="tutorials">
+    <h2>Video Tutorials</h2>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/Ze7zG3pI1hM" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/sd0h4glc8X8" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="discar">
+    <h2>Bästa diskar för nybörjare & proffs</h2>
+    <div class="card">
+      <p><strong>Nybörjare:</strong> Latitude 64 Pearl, Innova Leopard, Discraft Buzzz SS. Dessa diskar är lättkastade och ger en rak flygbana vilket gör dem perfekta för att bygga upp tekniken. De har också lägre vikt vilket gör att de kräver mindre kraft. Många nybörjare får snabbt självförtroende med dessa modeller. De finns tillgängliga i flera färger för bättre synlighet. Materialet är ofta mjukare för ett bekvämare grepp. Du kommer märka stor skillnad i precision.</p>
+      <p><strong>Proffs:</strong> Innova Destroyer, Discmania FD3, MVP Photon. Dessa diskar kräver mer kraft men ger också extremt bra kontroll och distans. Proffsen använder dem för både power drives och tekniska kast. De är stabila i alla väderförhållanden. Greppet är oftast något hårdare för bättre kontroll vid höga hastigheter. Dessa diskar är ofta byggda med premiumplast som håller länge. Det krävs träning för att hantera dem fullt ut.</p>
+    </div>
+  </section>
+
+  <section id="tips">
+    <h2>Fler tips för att bli bättre</h2>
+    <div class="card">
+      <ul>
+        <li>Värm alltid upp med puttar.</li>
+        <li>Spela med bättre spelare och lär dig av dem.</li>
+        <li>Filma dina kast för att se vad som kan förbättras.</li>
+        <li>Träna på olika banor för att utmana dig själv.</li>
+        <li>Analysera dina misstag efter varje runda.</li>
+        <li>Prova olika diskar tills du hittar vad som passar din stil.</li>
+        <li>Ha tålamod – förbättring kommer med tid och övning.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="banor">
+    <h2>Bra nybörjarbanor i Sverige</h2>
+    <div class="card">
+      <ul>
+        <li>Järva DiscGolfPark (Stockholm) – varierad men snäll bana</li>
+        <li>Skatås Discgolfbana (Göteborg) – teknisk och nybörjarvänlig</li>
+        <li>Falköping Discgolfbana – öppen, perfekt för distansträning</li>
+        <li>Backavallen Discgolf (Eskilstuna) – lätt att navigera och kortare hål</li>
+        <li>Kärsön (Stockholm) – kort och trevlig bana med många nybörjare</li>
+        <li>Ryds Discgolfbana (Linköping) – enkel layout och bra övningskorg</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="proffs">
+    <h2>Hur proffsen blev proffs</h2>
+    <div class="card">
+      <p>De flesta discgolfproffs började som hängivna amatörer. Genom att spela dagligen, analysera sina kast och delta i lokala tävlingar växte de snabbt. Många tränade även fysiskt för att förbättra styrka och rörlighet. De studerade videor av andra spelare och testade olika tekniker tills de hittade sin unika stil. Sponsorer kommer ofta först efter att man presterat bra i turneringar. Ett starkt mindset och tålamod är avgörande. Att bli proffs handlar om uthållighet, passion och ständigt lärande.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Discgolf Master. Skapad med passion för discgolf.</p>
+  </footer>
+</body>
+</html>
